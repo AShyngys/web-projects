@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOIR — Modern Dining, Almaty</title>
+  <meta name="description" content="NOIR is a modern dining restaurant in Almaty. Fire-forward cooking, an intimate room, and a menu built around a handful of dishes done exactly right.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ PRELOADER ============ -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__mark">NOIR</div>
+    <div class="preloader__sub">Modern Dining</div>
+  </div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__mark">NOIR</a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#menu" class="nav__link"><span>Menu</span></a>
+        <a href="#about" class="nav__link"><span>About</span></a>
+        <a href="#experience" class="nav__link"><span>Experience</span></a>
+        <a href="#reservation" class="nav__link"><span>Reservation</span></a>
+      </nav>
+
+      <a href="#reservation" class="btn btn--ghost nav__cta">Reserve a Table</a>
+
+      <button class="nav__burger" id="navBurger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ MOBILE MENU ============ -->
+  <div class="mobile-menu" id="mobileMenu">
+    <nav aria-label="Mobile">
+      <a href="#menu" class="mobile-menu__link">Menu</a>
+      <a href="#about" class="mobile-menu__link">About</a>
+      <a href="#experience" class="mobile-menu__link">Experience</a>
+      <a href="#reservation" class="mobile-menu__link">Reservation</a>
+      <a href="#location" class="mobile-menu__link">Visit</a>
+    </nav>
+    <a href="#reservation" class="btn btn--outline mobile-menu__cta">Reserve a Table</a>
+  </div>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero__media" id="heroMedia">
+        <img
+          src="https://images.unsplash.com/photo-1544148103-0773bf10d330?q=80&w=1920&auto=format&fit=crop"
+          alt="A dimly lit dining room at NOIR with a single warm light over a set table"
+          class="hero__img"
+        >
+        <div class="hero__scrim"></div>
+      </div>
+
+      <div class="hero__content">
+        <p class="hero__label reveal-up" data-delay="1">EST. 2024 · ALMATY</p>
+        <h1 class="hero__title">
+          <span class="reveal-up" data-delay="2">An evening worth</span>
+          <span class="reveal-up" data-delay="3">remembering.</span>
+        </h1>
+        <p class="hero__desc reveal-up" data-delay="4">Modern cuisine. Intimate atmosphere. Unforgettable moments.</p>
+
+        <div class="hero__actions reveal-up" data-delay="5">
+          <a href="#menu" class="btn btn--solid">Explore Menu</a>
+          <a href="#reservation" class="btn btn--outline">Reserve a Table</a>
+        </div>
+      </div>
+
+      <a href="#about" class="hero__scroll" aria-label="Scroll to explore">
+        <span class="hero__scroll-line"></span>
+        <span>Scroll to Explore</span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="about">
+      <div class="about__inner">
+        <div class="about__media fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1400&auto=format&fit=crop"
+            alt="A chef carefully plating a dish in the NOIR kitchen"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="about__content">
+          <p class="eyebrow fade-in">Our Philosophy</p>
+          <h2 class="about__title fade-in">Where fire meets finesse.</h2>
+          <p class="about__text fade-in">
+            NOIR was built on a simple idea: cook fewer dishes, cook them with total
+            attention, and let the fire do most of the talking. Our kitchen works almost
+            entirely over live coals — a discipline that rewards patience and punishes
+            shortcuts. The room stays low-lit and quiet, so the only thing competing for
+            your attention is what's on the plate.
+          </p>
+
+          <div class="about__stats">
+            <div class="stat fade-in">
+              <span class="stat__num" data-count="12">0</span><span class="stat__plus">+</span>
+              <span class="stat__label">Signature dishes</span>
+            </div>
+            <div class="stat fade-in">
+              <span class="stat__num" data-count="8">0</span>
+              <span class="stat__label">Years of craft</span>
+            </div>
+            <div class="stat fade-in">
+              <span class="stat__num" data-count="1">0</span>
+              <span class="stat__label">Unique experience</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SIGNATURE MENU ============ -->
+    <section class="signatures" id="signatures">
+      <div class="section-head">
+        <p class="eyebrow fade-in">Our Signatures</p>
+        <h2 class="section-title fade-in">Four dishes we're known for.</h2>
+      </div>
+
+      <div class="signatures__grid">
+
+        <article class="sig-card fade-in">
+          <div class="sig-card__media">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop" alt="Charred beef tenderloin sliced and plated with smoked jus" loading="lazy">
+            <span class="sig-card__arrow" aria-hidden="true">↗</span>
+          </div>
+          <div class="sig-card__info">
+            <h3>Embered Beef</h3>
+            <p>Charred beef tenderloin, smoked jus</p>
+            <span class="sig-card__price">₸ 12,900</span>
+          </div>
+        </article>
+
+        <article class="sig-card fade-in">
+          <div class="sig-card__media">
+            <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?q=80&w=1200&auto=format&fit=crop" alt="Black garlic glazed cod with seasonal vegetables" loading="lazy">
+            <span class="sig-card__arrow" aria-hidden="true">↗</span>
+          </div>
+          <div class="sig-card__info">
+            <h3>Black Garlic Cod</h3>
+            <p>Miso glaze, seasonal vegetables</p>
+            <span class="sig-card__price">₸ 9,800</span>
+          </div>
+        </article>
+
+        <article class="sig-card fade-in">
+          <div class="sig-card__media">
+            <img src="https://images.unsplash.com/photo-1560624052-449f5ddf0c31?q=80&w=1200&auto=format&fit=crop" alt="Wild mushroom truffle risotto finished with parmesan" loading="lazy">
+            <span class="sig-card__arrow" aria-hidden="true">↗</span>
+          </div>
+          <div class="sig-card__info">
+            <h3>Truffle Risotto</h3>
+            <p>Wild mushrooms, parmesan, truffle oil</p>
+            <span class="sig-card__price">₸ 8,500</span>
+          </div>
+        </article>
+
+        <article class="sig-card fade-in">
+          <div class="sig-card__media">
+            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=1200&auto=format&fit=crop" alt="Dark chocolate dessert with sea salt and vanilla" loading="lazy">
+            <span class="sig-card__arrow" aria-hidden="true">↗</span>
+          </div>
+          <div class="sig-card__info">
+            <h3>Dark Chocolate</h3>
+            <p>70% cacao, sea salt, vanilla</p>
+            <span class="sig-card__price">₸ 4,500</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ FULL MENU ============ -->
+    <section class="menu" id="menu">
+      <div class="section-head">
+        <p class="eyebrow fade-in">The Full Menu</p>
+        <h2 class="section-title fade-in">Everything we serve.</h2>
+      </div>
+
+      <div class="menu__filters fade-in" role="tablist" aria-label="Menu categories">
+        <button class="menu__filter is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="menu__filter" data-filter="starters" role="tab" aria-selected="false">Starters</button>
+        <button class="menu__filter" data-filter="mains" role="tab" aria-selected="false">Mains</button>
+        <button class="menu__filter" data-filter="desserts" role="tab" aria-selected="false">Desserts</button>
+        <button class="menu__filter" data-filter="drinks" role="tab" aria-selected="false">Drinks</button>
+      </div>
+
+      <div class="menu__list" id="menuList"><!-- injected by JS --></div>
+    </section>
+
+    <!-- ============ EXPERIENCE / GALLERY ============ -->
+    <section class="gallery" id="experience">
+      <div class="section-head">
+        <p class="eyebrow fade-in">Experience</p>
+        <h2 class="section-title fade-in">A room built for slow evenings.</h2>
+      </div>
+
+      <div class="gallery__grid">
+        <figure class="gallery__item gallery__item--a fade-in">
+          <img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?q=80&w=1200&auto=format&fit=crop" alt="Candlelit table set for fine dining" loading="lazy">
+          <figcaption>The main room</figcaption>
+        </figure>
+        <figure class="gallery__item gallery__item--b fade-in">
+          <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?q=80&w=1200&auto=format&fit=crop" alt="Chef searing a steak over open flame" loading="lazy">
+          <figcaption>Live-fire kitchen</figcaption>
+        </figure>
+        <figure class="gallery__item gallery__item--c fade-in">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop" alt="Dim ambient lighting inside the restaurant" loading="lazy">
+          <figcaption>Evening light</figcaption>
+        </figure>
+        <figure class="gallery__item gallery__item--d fade-in">
+          <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?q=80&w=1200&auto=format&fit=crop" alt="Plated dessert with delicate garnish" loading="lazy">
+          <figcaption>Dessert course</figcaption>
+        </figure>
+        <figure class="gallery__item gallery__item--e fade-in">
+          <img src="https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?q=80&w=1200&auto=format&fit=crop" alt="Intimate two-seat table near the window" loading="lazy">
+          <figcaption>A quiet corner</figcaption>
+        </figure>
+        <figure class="gallery__item gallery__item--f fade-in">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1200&auto=format&fit=crop" alt="Close-up of a plated steak dish" loading="lazy">
+          <figcaption>The main course</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ RESERVATION ============ -->
+    <section class="reservation" id="reservation">
+      <div class="reservation__inner">
+        <div class="reservation__intro">
+          <p class="eyebrow fade-in">Reservation</p>
+          <h2 class="section-title fade-in">Your table is waiting.</h2>
+          <p class="reservation__text fade-in">
+            We hold most of the room for walk-ins after 9pm, but the early and late
+            seatings go quickly on weekends. Tell us when you'd like to come, and we'll
+            confirm within a day.
+          </p>
+        </div>
+
+        <form class="reservation__form fade-in" id="reservationForm" novalidate>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="resName">Name</label>
+              <input type="text" id="resName" name="name" autocomplete="name" required>
+              <span class="field__error" id="err-resName"></span>
+            </div>
+            <div class="field">
+              <label for="resEmail">Email</label>
+              <input type="email" id="resEmail" name="email" autocomplete="email" required>
+              <span class="field__error" id="err-resEmail"></span>
+            </div>
+          </div>
+
+          <div class="form-row form-row--three">
+            <div class="field">
+              <label for="resDate">Date</label>
+              <input type="date" id="resDate" name="date" required>
+              <span class="field__error" id="err-resDate"></span>
+            </div>
+            <div class="field">
+              <label for="resTime">Time</label>
+              <input type="time" id="resTime" name="time" required>
+              <span class="field__error" id="err-resTime"></span>
+            </div>
+            <div class="field">
+              <label for="resGuests">Guests</label>
+              <select id="resGuests" name="guests" required>
+                <option value="">Select</option>
+                <option>1</option><option>2</option><option>3</option><option>4</option>
+                <option>5</option><option>6</option><option>7+</option>
+              </select>
+              <span class="field__error" id="err-resGuests"></span>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn--solid reservation__submit">Request Reservation</button>
+        </form>
+
+        <div class="reservation__success" id="reservationSuccess" hidden>
+          <p>Thank you. Your reservation request has been received.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LOCATION ============ -->
+    <section class="location" id="location">
+      <div class="location__inner">
+        <div class="location__content">
+          <p class="eyebrow fade-in">Visit NOIR</p>
+          <h2 class="section-title fade-in">Almaty, Kazakhstan</h2>
+
+          <div class="location__detail fade-in">
+            <h3>Address</h3>
+            <p>123 Abai Avenue</p>
+          </div>
+
+          <div class="location__detail fade-in">
+            <h3>Opening Hours</h3>
+            <div class="hours">
+              <div class="hours__row"><span>Mon – Thu</span><span>17:00 — 23:00</span></div>
+              <div class="hours__row"><span>Fri – Sat</span><span>17:00 — 01:00</span></div>
+              <div class="hours__row"><span>Sun</span><span>17:00 — 22:00</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="location__panel fade-in" aria-hidden="true">
+          <div class="location__panel-grid"></div>
+          <div class="location__pin">
+            <span class="location__pin-dot"></span>
+            <span class="location__pin-label">NOIR<br>Abai Ave, Almaty</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="footer__mark">NOIR</span>
+        <span class="footer__tag">Modern Dining</span>
+      </div>
+
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#reservation">Reservation</a>
+      </nav>
+
+      <div class="footer__social">
+        <a href="#" aria-label="NOIR on Instagram">Instagram</a>
+        <a href="#" aria-label="NOIR on Facebook">Facebook</a>
+        <a href="#" aria-label="NOIR on Telegram">Telegram</a>
+      </div>
+    </div>
+    <p class="footer__legal">© 2026 NOIR. All rights reserved.</p>
+  </footer>
+
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
